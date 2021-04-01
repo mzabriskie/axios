@@ -91,6 +91,9 @@ export interface AxiosError<T = any> extends Error {
   toJSON: () => object;
 }
 
+export interface CanceledError<T> extends AxiosError<T>{
+}
+
 export interface AxiosPromise<T = any> extends Promise<AxiosResponse<T>> {
 }
 
